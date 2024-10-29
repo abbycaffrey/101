@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+:root {
+    --primary: #6B9080;  
+    --secondary: #A4C3B2;
+    --accent: #CCE3DE;    
+    --background: #EAF4F4; 
+    --secondary-background: #F6FFF8; 
+    --text-color: #333333; 
+    --delete: #E74C3C;    
+}
+
+
+body {
+    max-width: 55rem;
+    margin: 0.5em auto;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 0.75rem;
+    background-color: var(--secondary-background);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: bolder;
+    color: var(--primary);
+}
+
+nav {
+    color: white;
+    background-color: var(--primary);
+    padding: 0.75rem;
+}
+
+nav a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.tasklist {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background-color: var(--background);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+.task-done {
+    margin-right: 1rem;
+}
+
+.task-description {
+    flex-grow: 2;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.task-date {
+    margin-right: 1rem;
+    color: var(--secondary);
+}
+
+.task-delete {
+    color: var(--delete);
+    background: none;
+    border: none;
+    font-family: 'Material Icons';
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+
+.form-create-task input[type="text"] {
+    width: 100%; 
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    background-color: var(--secondary-background);
+}
+
+.form-create-task input[type="date"] {
+    width: 10rem; 
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    background-color: var(--secondary-background);
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary);
+    transform: scale(1.05);
+}
+
+input.toggle-switch {
+    position: relative;
+    width: 2.5em;
+    height: 1.4em;
+    appearance: none;
+    background-color: var(--secondary);
+    border-radius: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+input.toggle-switch:checked {
+    background-color: var(--primary);
+}
+
+input.toggle-switch:before {
+    content: '';
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    background-color: white;
+    top: 0.1em;
+    left: 0.1em;
+    transition: 0.3s;
+}
+
+input.toggle-switch:checked:before {
+    left: 1.2em;
+}
+
+.toggles-container {
+    display: flex;               
+    justify-content: flex-start;  
+    gap: 1rem;                   
+    margin: 1rem 0;
+}
+
+.toggle-group {
+    display: flex;
+    align-items: center;          
+}
+
+.toggle-group label {
+    margin-left: 0.5rem;     
+}
+
+
+input.toggle-switch {
+    position: relative;
+    width: 2.5em;
+    height: 1.4em;
+    appearance: none;
+    background-color: var(--secondary);
+    border-radius: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+input.toggle-switch:checked {
+    background-color: var(--primary);
+}

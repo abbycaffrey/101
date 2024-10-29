@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="https://catalog.byu.edu/courses/11325-001">BYU IT&C 210A</a>
+  </nav>
+
+  <h1>Task List</h1>
+  
+
+  <div class="toggles-container">
+    <div class="toggle-group">
+        <input type="checkbox" class="toggle-switch" id="sort-by-date" />
+        <label for="sort-by-date">Sort by date</label>
+    </div>
+    <div class="toggle-group">
+        <input type="checkbox" class="toggle-switch" id="filter-completed-tasks" />
+        <label for="filter-completed-tasks">Filter completed tasks</label>
+    </div>
+  </div>
+
+
+  <ul class="tasklist">
+    <li class="task">
+      <input type="checkbox" class="task-done checkbox-icon" />
+      <span class="task-description">Task 1 description</span>
+      <span class="task-date">2024-09-09</span>
+      <button class="task-delete material-icon">delete</button>
+    </li>
+    <li class="task">
+      <input type="checkbox" class="task-done checkbox-icon" />
+      <span class="task-description">Task 2 description</span>
+      <span class="task-date">2024-09-09</span>
+      <button class="task-delete material-icon">delete</button>
+    </li>
+  </ul>
+
+
+  <form class="form-create-task" onsubmit="on_submit(event)">
+    <div>
+      <input type="text" id="description" name="description" required placeholder="Task description">
+    </div>
+    <div>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div>
+      <button type="submit">Create Task</button>
+    </div>
+  </form>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
